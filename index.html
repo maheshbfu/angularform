@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pool Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <h1 style="text-align: center">Pool Form</h1>
+  <div class="container">
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+          <p>
+            <input type="text" name="name" placeholder="Name" id="name" >
+          </p>
+            <p>
+            <input type="email" name="email" placeholder="Your Email"id="email" >
+          </p>
+            <p>
+            <textarea name="poolname" rows="5" placeholder="Give the pool a name" id="poolname" required></textarea >
+          </p>
+            <p>
+            <textarea name="suppliers" rows="5" placeholder="What suppliers do you want to buy from?" id="suppliers"></textarea>
+          </p>
+             <p>
+            <textarea name="pooldes" rows="7" placeholder="Describe the pool" id="pooldes"></textarea>
+          </p>
+            <p>
+            <input type="text" name="deadline"  id='deadline' placeholder="Deadline for members to send you orders" id="deadline" 
+                   onfocus="(this.type='date')"
+                onblur="(this.type='text')" required>
+          </p>
+            <p style="color: #555555; background-color: #eeeeee; border: #dddddd 2px solid; text-align: center;width:50%;
+  padding:10px; float: right">CURRENCY : SEK</p>
+            <p>
+            <input type="text" id="file" name="file" placeholder="Click to upload Photo"
+                  onfocus="(this.type='file')"
+                onblur="(this.type='text')" >
+                   </p>
+            <p>
+            <input type="text" name="deadlineforpay"  placeholder="Deadline for members to pay" id="deadlineforpay" 
+                   onfocus="(this.type='date')"
+                onblur="(this.type='text')" required>
+          </p>
+             <p>
+            <input type="text" name="collect" placeholder="Who will collect members payment?"id="collect">
+          </p>
+            <p>
+            <input type="text" name="plandate"  placeholder="Planned date/time for members to collect orders" id="plandate" 
+                   onfocus="(this.type='date')"
+                onblur="(this.type='text')" required>
+          </p>
+                 <p>
+            <input type="text" name="recieve" placeholder="Who will recieve members orders?"id="recieve" >
+          </p>
+                  <p>
+            <input type="text" name="place" placeholder="Place where members can collect orders?"id="recieve" >
+          </p>
+                 <p>
+            <input type="text" name="pay" placeholder="How do should the members pay for their order?"id="recieve">
+          </p>
+       <input type="text" placeholder="6+2">
+         <p>
+            <button class="button" type="buttom">Submit</button>
+          </p>
+
+        </form>
+      </div>
+         
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
